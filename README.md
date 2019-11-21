@@ -4,6 +4,7 @@
 [![PyPI version](https://badge.fury.io/py/ensurecvs.svg)](https://badge.fury.io/py/ensurecvs)
 [![Python version](https://img.shields.io/pypi/pyversions/ensurecvs)](https://img.shields.io/pypi/pyversions/ensurecvs)
 [![Downloads](https://img.shields.io/pypi/dm/ensurecvs)](https://img.shields.io/pypi/dm/ensurecvs)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/priv-kweihmann/ensurecvs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priv-kweihmann/ensurecvs/context:python)
 
 ## Purpose
 
@@ -13,6 +14,20 @@ This tool shall help identify commits in current source tree that are
 * available in the parent branch
 
 and are likely to contain bugfixes.
+
+## History
+
+When you're using a 3rd party components in your project it's hard to balance between keeping it safe and tested against keeping in touch with upstream/mainline, especially when you have to decide if the code is as safe as possible.
+
+Most would rely here on CVE-notifications for the used component and the corresponding version.
+
+I was watching the [2019's keynote of Greg Kroah-Hartman at Embedded Linux Conference Europe in Lyon](https://www.youtube.com/watch?v=fIwr_znLsec&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=6&t=0s) where he said, that most issues don't even get a CVE entry anymore, they will just be fixed with a commit in upstream (at least for the kernel).
+
+This is somehow hard to maintain, as mostly you simply don't want to change the feature-set (as this has been tested and approved) but need the bug- and issue-fixes from that project.
+
+That is where this tool comes into play - It performs automatic checks if there are upstream fixes available - and if so, if they only contain fixes and NOT features.
+
+Ensurecvs, helps you to __ensure__ and you're using the best of the used __content versioning system__
 
 ### What it does
 
@@ -83,6 +98,7 @@ If you have interest in one or more of the following topics, feel free to get in
 * better commit classification (maybe with something like [this here](https://github.com/nxs5899/Multi-Class-Text-Classification----Random-Forest))
 * better documentation
 * changeset code analysis for better commit classification
+* check on out-of-tree patches in local code
 * compare the changeset diff for cherry-pick analysis
 * streamline code
 * svn-repository support
