@@ -5,7 +5,7 @@ def parse_args():
     global RUNARGS
     global DEFAULT_VERSION
     parser = argparse.ArgumentParser(
-        prog="ensurecsv", description="Ensure that you're using the most security source code")
+        prog="ensurecsv", description="Ensure that you're using the most secure source code")
     parser.add_argument("localdir", help="Path to local repo")
     parser.add_argument("--srcbranch", default=None,
                         help="Use explicitly given branch")

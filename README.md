@@ -48,7 +48,7 @@ usage: ensurecsv [-h] [--srcbranch SRCBRANCH]
                  [--srcrev SRCREV | --srctag SRCTAG] [--upstream UPSTREAM]
                  localdir
 
-Ensure that you're using the most security source code
+Ensure that you're using the most secure source code
 
 positional arguments:
   localdir              Path to local repo
@@ -63,6 +63,14 @@ optional arguments:
 ```
 
 ## Installation
+
+### From pypi
+
+simply run
+
+```sh
+pip3 install ensurecvs
+```
 
 ### From source
 
