@@ -7,7 +7,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         prog="ensurecsv", description="Ensure that you're using the most secure source code")
     parser.add_argument("localdir", help="Path to local repo")
-    parser.add_argument("--srcbranch", default=None,
+    parser.add_argument("--srcbranch", default="master",
                         help="Use explicitly given branch")
 
     revgroup = parser.add_mutually_exclusive_group()
