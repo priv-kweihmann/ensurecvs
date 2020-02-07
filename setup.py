@@ -16,7 +16,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="ensurecvs",
-    version="1.0.2",
+    version="1.0.3",
     author="Konrad Weihmann",
     author_email="kweihmann@outlook.com",
     description="Find important upstream fixes",
