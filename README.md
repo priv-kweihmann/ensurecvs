@@ -6,6 +6,11 @@
 [![Downloads](https://img.shields.io/pypi/dm/ensurecvs)](https://img.shields.io/pypi/dm/ensurecvs)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/priv-kweihmann/ensurecvs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priv-kweihmann/ensurecvs/context:python)
 
+## Note
+
+Active development on this repository has stopped.
+Feel free to reach out if you're interested in reactivating it.
+
 ## Purpose
 
 This tool shall help identify commits in current source tree that are
